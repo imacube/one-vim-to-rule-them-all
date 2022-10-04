@@ -140,3 +140,8 @@ packloadall
 " All messages and errors will be ignored.
 silent! helptags ALL
 " END ALE
+
+" If a local .vimrc file exists, source it last
+if filereadable('.vimrc')
+	source .vimrc
+endif
