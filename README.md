@@ -1,5 +1,13 @@
 Personal vimrc and vim plugins.
 
+# After a fresh clone
+
+Run the following to pull down the submodules.
+
+```shell
+git submodule update --init
+```
+
 # Git repos of vim plugins
 
 Create the diretory for the plugins to be stored
