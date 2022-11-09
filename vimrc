@@ -10,11 +10,28 @@ set backspace=indent,eol,start
 set history=200		" keep 200 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
-set wildmenu		" display completion matches in a status line
 set ttimeout		" time out for key codes
 set ttimeoutlen=100	" wait up to 100ms after Esc for special key
 set display=truncate	" Show @@@ in the last line if it is truncated.
 set scrolloff=10	" Minimum number of lines above and below the cursor
+
+" Terminal configuration
+set termwinsize=12x0
+set splitbelow
+set mouse=a
+
+" vim menu activation and configuration
+source $VIMRUNTIME/menu.vim
+set wildmenu		" display completion matches in a status line
+set wildmode=full	" Complete next full match using the original string
+set cpo-=<		"
+set wildcharm=<C-Z>	" Works like wildchar but is recognized inside a macro
+" Activate emenu, a console menu
+map <F4> :emenu <C-Z>
+
+" modelines
+set modeline
+set modelines=5
 
 " Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
 " confusing.
@@ -111,8 +128,12 @@ let &directory=mySwapDir
 " Search settings
 set hlsearch
 set incsearch
-nnoremap <F1> :nohlsearch<CR>
+nnoremap <F2> :nohlsearch<CR>
 nnoremap <F8> :qall<CR>
+
+" Code work
+nnoremap <F5> :make test<CR>
+nnoremap <F4> :close<CR>
 
 set number	" Show line numbers
 
@@ -145,3 +166,4 @@ silent! helptags ALL
 if filereadable('.vimrc')
 	source .vimrc
 endif
+

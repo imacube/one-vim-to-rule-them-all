@@ -24,3 +24,4 @@ git submodule add <URL of git repo to clone>
 * https://github.com/dense-analysis/ale.git
 * https://github.com/tpope/vim-fugitive.git
 
+# vim: tabstop=4 shiftwidth=4 expandtab
