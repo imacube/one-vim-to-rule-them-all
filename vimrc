@@ -18,7 +18,6 @@ set scrolloff=10	" Minimum number of lines above and below the cursor
 " Terminal configuration
 set termwinsize=12x0
 set splitbelow
-set mouse=a
 
 " vim menu activation and configuration
 source $VIMRUNTIME/menu.vim
