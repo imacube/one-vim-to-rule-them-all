@@ -1,11 +1,11 @@
 Personal vimrc and vim plugins.
 
-# After a fresh clone
+To create first make sure the `~/.vimrc` file is not present (rename or delete it).
 
-Run the following to pull down the submodules.
+If there is a `.vim` directory back it up.
 
-```shell
-git submodule update --init
+```
+git clone https://github.com/imacube/one-vim-to-rule-them-all.git ~/.vim
 ```
 
 # Git repos of vim plugins
@@ -24,3 +24,4 @@ git submodule add <URL of git repo to clone>
 * https://github.com/dense-analysis/ale.git
 * https://github.com/tpope/vim-fugitive.git
 
+# vim: tabstop=4 shiftwidth=4 expandtab
